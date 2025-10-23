@@ -1,0 +1,22 @@
+{
+  "name": "paypilot",
+  "version": "1.0.0",
+  "description": "PayPilot - Non-custodial payment platform for PYUSD vendor payments",
+  "private": true,
+  "workspaces": [
+    "frontend",
+    "backend",
+    "shared/types"
+  ],
+  "scripts": {
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "dev:frontend": "cd frontend && npm run dev",
+    "dev:backend": "cd backend && npm run dev",
+    "build": "npm run build --workspaces",
+    "test": "npm run test --workspaces",
+    "install:all": "npm install && npm install --workspaces"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

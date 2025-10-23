@@ -1,0 +1,16 @@
+{
+  "name": "@paypilot/types",
+  "version": "1.0.0",
+  "description": "Shared TypeScript types for PayPilot",
+  "main": "index.ts",
+  "types": "index.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.0",
+    "jest": "^29.7.0",
+    "@types/jest": "^29.5.8"
+  }
+}
