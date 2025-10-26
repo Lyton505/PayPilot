@@ -146,3 +146,6 @@ export interface ErrorResponse {
   recoverable: boolean;
   suggestedAction?: string;
 }
+
+// Re-export validation functions
+export * from './validation';
